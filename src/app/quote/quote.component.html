@@ -3,6 +3,8 @@
 <ul>
   <li *ngFor = 'let quote of quotes'>
     {{quote.words}}
+    <app-quote-detail [name] = 'quote'></app-quote-detail>
   </li>
 </ul>
 <p *ngIf = 'quotes.length > 3'> There's room for more.</p>
+
