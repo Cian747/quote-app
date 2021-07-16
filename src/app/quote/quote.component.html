@@ -5,9 +5,11 @@
 <ul>
   <li *ngFor='let quote of quotes; let i = index'>
     {{quote.words}} - {{quote.completeDate | date}} <br>
-    <button (click)='toggleDetails(i)'>Toggle Details</button>
+    <button (click)='toggleDetails(i)' class="btn btn-primary">See author</button>
     <app-quote-detail *ngIf='quote.showName' [name]='quote' (isComplete)='completeGoal($event,i)' (myLike)='addLike($event,i)' (yourLike) ='addNotLike($event,i)'>
     </app-quote-detail>
   </li>
 </ul>
 <p *ngIf='quotes.length > 5'> There's room for more.</p>
+
+<app-quote-form (addQuote) = 'addNewQuote($event)'></app-quote-form>

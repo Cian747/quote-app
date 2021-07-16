@@ -35,7 +35,12 @@ export class QuoteComponent implements OnInit {
      if(yourLike)
      this.quotes[index].dislikes++;
    }
-  
+   addNewQuote(quote:any){
+    let goalLength = this.quotes.length;
+    quote.id = goalLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
   constructor() { }
 
   ngOnInit(): void {
