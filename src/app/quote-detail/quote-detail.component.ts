@@ -16,6 +16,20 @@ export class QuoteDetailComponent implements OnInit {
     this.isComplete.emit(complete);
   }
 
+ 
+  @Output() myLike = new EventEmitter<boolean>();
+
+  upVote(yes:boolean){
+    this.myLike.emit(yes);
+  }
+
+
+  @Output() yourLike = new EventEmitter<boolean>();
+
+  downVote(no:boolean){
+    this.yourLike.emit(no);
+  }
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,12 +1,13 @@
 <h1>Quote on quote!</h1>
 <hr>
+<p>We'll keep track of your quotes for you.</p>
 <h2>Examples</h2>
 <ul>
-  <li *ngFor = 'let quote of quotes; let i = index'>
-    {{quote.words}}
+  <li *ngFor='let quote of quotes; let i = index'>
+    {{quote.words}} - {{quote.completeDate | date}} <br>
     <button (click)='toggleDetails(i)'>Toggle Details</button>
-    <app-quote-detail *ngIf = 'quote.showName' [name] = 'quote' (isComplete) = 'completeGoal($event,i)'></app-quote-detail>
+    <app-quote-detail *ngIf='quote.showName' [name]='quote' (isComplete)='completeGoal($event,i)' (myLike)='addLike($event,i)' (yourLike) ='addNotLike($event,i)'>
+    </app-quote-detail>
   </li>
 </ul>
-<p *ngIf = 'quotes.length > 5'> There's room for more.</p>
-
+<p *ngIf='quotes.length > 5'> There's room for more.</p>
