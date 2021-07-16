@@ -9,12 +9,15 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {id: 1, words:'Blood,Sweat,Respect. The first two you give and the last one you earn', author: 'Dwayne(The Rock!) Johnson'},
-    {id: 2, words:'Hard work beats talent when talent does not work hard', author:'Cristiano Ronaldo'},
-    {id: 3, words:'The process is what makes you sweet', author:'Eric The HipHop Preacher'},
-    {id: 4, words:'Get out of the stands and get in the game', author:'Eric the HipHop Preacher'}
+    new Quote(1,'Blood,Sweat,Respect. The first two you give and the last one you earn', 'Dwayne(The Rock!) Johnson'),
+    new Quote(2,'Hard work beats talent when talent does not work hard','Cristiano Ronaldo'),
+    new Quote(3,'The process is what makes you sweet','Eric The HipHop Preacher'),
+    new Quote(4,'Get out of the stands and get in the game','Eric the HipHop Preacher')
   ];
 
+  toggleDetails(index: number){
+    this.quotes[index].showName = !this.quotes[index].showName;
+  }
   constructor() { }
 
   ngOnInit(): void {

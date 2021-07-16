@@ -1,10 +1,12 @@
 <h1>Quote on quote!</h1>
+<hr>
 <h2>Examples</h2>
 <ul>
-  <li *ngFor = 'let quote of quotes'>
+  <li *ngFor = 'let quote of quotes; let i = index'>
     {{quote.words}}
-    <app-quote-detail [name] = 'quote'></app-quote-detail>
+    <button (click)='toggleDetails(i)'>Toggle Details</button>
+    <app-quote-detail *ngIf = 'quote.showName' [name] = 'quote'></app-quote-detail>
   </li>
 </ul>
-<p *ngIf = 'quotes.length > 3'> There's room for more.</p>
+<p *ngIf = 'quotes.length > 5'> There's room for more.</p>
 
