@@ -36,8 +36,8 @@ export class QuoteComponent implements OnInit {
      this.quotes[index].dislikes++;
    }
    addNewQuote(quote:any){
-    let goalLength = this.quotes.length;
-    quote.id = goalLength+1;
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }

@@ -1,4 +1,6 @@
-<p><strong>{{name.author}}</strong></p>
-<button (click) = 'upVote(true)'>Like</button>{{name.likes}}
-<button (click) = 'downVote(true)'>Dislike</button>{{name.dislikes}}
-<button (click)= 'goalComplete(true)'>Delete Goal</button>
+<div class=" p-2 ">
+<p>By~<strong>{{name.author}}</strong></p>
+<button (click) = 'upVote(true)' class="btn btn-success">Like</button>{{name.likes}}
+<button (click) = 'downVote(true)' class="btn btn-info">Dislike</button>{{name.dislikes}}
+<button (click)= 'goalComplete(true)' class="btn btn-outline-danger">Delete Goal</button>
+</div>

@@ -1,0 +1,15 @@
+.header{
+    padding: 30px;
+    background-color:cadetblue;
+    text-align:center;
+}
+
+.header h1{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, fantasy;
+    font-weight:900;
+}
+
+.col-md-3{
+    padding: 20px;
+}
