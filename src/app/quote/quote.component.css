@@ -10,6 +10,20 @@
     font-weight:900;
 }
 
-.col-md-3{
+/* .col-md-3{
+    padding: 20px;
+} */
+
+.card{
+    border:1px solid grey;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom:auto;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+#quotes{
     padding: 20px;
 }
