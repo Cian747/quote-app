@@ -9,7 +9,7 @@
     <div id="quotes">
       <div class="col-md-6">
         <div *ngFor='let quote of quotes; let i = index' class="card">
-          <q>{{quote.words}}</q> - {{quote.completeDate | date }}
+          <q>{{quote.words}}</q> - {{quote.completeDate | timeCount}}
           <button (click)='toggleDetails(i)' class="btn btn-outline-primary">See author</button>
           <app-quote-detail *ngIf='quote.showName' [name]='quote' (isComplete)='DeleteGoal($event,i)'
             (myLike)='addLike($event,i)' (yourLike)='addNotLike($event,i)'>
@@ -20,7 +20,7 @@
 
     <p *ngIf='quotes.length > 5'> There's room for more.</p>
 
-    <div class="col-md-6">
+    <div>
       <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
     </div>
   </div>
