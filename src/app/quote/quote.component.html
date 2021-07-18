@@ -1,27 +1,31 @@
-<div class="container">
+<div class="container-fluid">
   <div class="header">
     <h1>Quote on quote!</h1>
     <hr>
     <p>We'll keep track of your quotes for you.</p>
   </div>
   <h2> Recent Quotes</h2>
-  <div class="row">
-    <div id="quotes">
-      <div class="col-md-6">
-        <div *ngFor='let quote of quotes; let i = index' class="card">
-          <q>{{quote.words}}</q> - {{quote.completeDate | timeCount}}
+  <div id="quotes">
+    <div class="row">
+      <div class="col-md-3" *ngFor='let quote of quotes; let i = index'>
+        <div class="card">
+          <q class="card-title">{{quote.words}}</q>  {{quote.completeDate| date}}
           <button (click)='toggleDetails(i)' class="btn btn-outline-primary">See author</button>
-          <app-quote-detail *ngIf='quote.showName' [name]='quote' (isComplete)='DeleteGoal($event,i)'
-            (myLike)='addLike($event,i)' (yourLike)='addNotLike($event,i)'>
-          </app-quote-detail>
+          <div *ngIf='quote.showName'>
+            <app-quote-detail [name]='quote' (isComplete)='DeleteGoal($event,i)' (myLike)='addLike($event,i)'
+              (yourLike)='addNotLike($event,i)'>
+            </app-quote-detail>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <p *ngIf='quotes.length > 5'> There's room for more.</p>
+  <p *ngIf='quotes.length > 5'> There's room for more.</p>
 
-    <div>
-      <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
-    </div>
+
+
+  <div class="forma">
+    <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
   </div>
 </div>

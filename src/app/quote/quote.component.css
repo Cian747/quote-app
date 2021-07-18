@@ -1,30 +1,59 @@
 .header{
     padding: 30px;
-    background-color:cadetblue;
+    /* background-color:cadetblue; */
     text-align:center;
+
 }
 
 .header h1{
-    font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, fantasy;
-    font-weight:900;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: underline;
+    /* font-weight:900; */
 }
-
-/* .col-md-3{
-    padding: 20px;
-} */
 
 .card{
     border:1px solid grey;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
-    padding: auto;
+    padding: 10%;
+    height: auto;
+    background-color:brown;
+    color: white;
+    width: 105%;
+    height: auto;
+}
+q{
+    font-size: 150%;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.card:hover{
+filter:drop-shadow(8px 8px 10px gray);
 }
 
 h2{
     text-decoration: underline;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
 }
 
 #quotes{
-    padding: 20px;
+    padding: 10px;
+    background-color:azure;
+}
+
+h2{
+    margin-top: 1rem;
+    text-align: center;
+    padding: 5px;
+    background-color: aliceblue;
+}
+.forma{
+    padding: 5px;
+}
+
+.forma button{
+    align-items: center;
 }

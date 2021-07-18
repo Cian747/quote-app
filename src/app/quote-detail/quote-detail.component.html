@@ -1,6 +1,7 @@
-<div class=" p-2 ">
-<p>By~<strong>{{name.author}}</strong></p>
-<button (click) = 'upVote(true)' class="btn btn-outline-success">Like</button>{{name.likes}}
-<button (click) = 'downVote(true)' class="btn btn-outline-info">Dislike</button>{{name.dislikes}}
+<div class=" p-1 ">
+<p class="card-text">By~<strong>{{name.author}}</strong></p>
+<p>This quote was posted {{name.completeDate| timeCount}} days ago.</p>
+<button (click) = 'upVote(true)' class="btn btn-outline-success">Likes {{name.likes}}</button>
+<button (click) = 'downVote(true)' class="btn btn-outline-info">Dislikes {{name.dislikes}}</button>
 <button (click)= 'goalDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
 </div>
