@@ -1,7 +1,9 @@
-<div class=" p-1 ">
-<p class="card-text">By~<strong>{{name.author}}</strong></p>
-<p>This quote was posted {{name.completeDate| timeCount}} days ago.</p>
-<button (click) = 'upVote(true)' class="btn btn-outline-success">Likes {{name.likes}}</button>
-<button (click) = 'downVote(true)' class="btn btn-outline-info">Dislikes {{name.dislikes}}</button>
-<button (click)= 'goalDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+<div class=" card-body p-1 ">
+    <blockquote class="blockquote mb-0">
+        <footer class="blockquote-footer"><p>By~<strong><cite class="">{{name.author}}</cite></strong></p></footer>
+        <p>This quote was posted {{name.completeDate| timeCount}} days ago.</p>
+    </blockquote>
+    <button (click)='upVote(true)' class="btn btn-outline-success">Likes {{name.likes}}</button>
+    <button (click)='downVote(true)' class="btn btn-outline-info">Dislikes {{name.dislikes}}</button>
+    <button (click)='goalDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
 </div>

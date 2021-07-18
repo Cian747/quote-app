@@ -1,15 +1,13 @@
 .header{
     padding: 30px;
-    /* background-color:cadetblue; */
     text-align:center;
-
+    color:white;
 }
 
 .header h1{
     font-size: 50px;
     font-family: 'Playfair Display', serif;
     text-decoration: underline;
-    /* font-weight:900; */
 }
 
 .card{
@@ -18,8 +16,7 @@
     margin-bottom: 1rem;
     padding: 10%;
     height: auto;
-    background-color:brown;
-    color: white;
+    background-color:beige;
     width: 105%;
     height: auto;
 }
@@ -30,7 +27,7 @@ q{
 }
 
 .card:hover{
-filter:drop-shadow(8px 8px 10px gray);
+    filter:drop-shadow(8px 8px 10px rgb(116, 116, 116));
 }
 
 h2{
@@ -41,7 +38,6 @@ h2{
 
 #quotes{
     padding: 10px;
-    background-color:azure;
 }
 
 h2{
@@ -50,10 +46,11 @@ h2{
     padding: 5px;
     background-color: aliceblue;
 }
-.forma{
-    padding: 5px;
-}
+
 
 .forma button{
     align-items: center;
+}
+p{
+    font-size: 120%;
 }

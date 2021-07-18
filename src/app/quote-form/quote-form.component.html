@@ -1,11 +1,11 @@
 <div class="container-fluid">
-    <h2 class="text-center">ADD YOUR QUOTE!</h2>
-    <hr>
-    <form #quoteForm='ngForm' (ngSubmit)='submitQuote(quoteForm); quoteForm.resetForm({})'  >
+    <form #quoteForm='ngForm' (ngSubmit)='submitQuote(quoteForm); quoteForm.resetForm({})'>
+        <h2 class="text-center">ADD YOUR QUOTE!</h2>
+        <hr>
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.author" name="name"
-                #name='ngModel'>
+                #name='ngModel' placeholder="Full names">
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p>Name is required</p>
             </div>
@@ -13,7 +13,7 @@
         <div class="form-group">
             <label for="description">Quote</label>
             <textarea class="form-control" id="description" id="name" [(ngModel)]="newQuote.words" name="words"
-                #words='ngModel' rows="4" required></textarea>
+                #words='ngModel' rows="4" required placeholder="Write here"></textarea>
             <div [hidden]="words.valid || words.pristine" class="alert alert-danger">
                 <p>Quote is required</p>
             </div>
@@ -22,9 +22,9 @@
             <label for="complete">Date</label>
             <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate"
                 #completeDate="ngModel" required>
-                <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
-                    <p>Date is required</p>
-                </div>
+            <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+                <p>Date is required</p>
+            </div>
         </div>
         <button type="submit" class="btn btn-success">Save</button>
     </form>
