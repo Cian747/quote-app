@@ -1,6 +1,6 @@
 # Quote App
 #### Create and save your own quote, 2021
-#### By **cian**
+#### By **[CIAN](https://github.com/Cian747)**
 ## Description
 The application will store and allow you to create your own quotes. You areable to vote on your favorite and delete the one's you don't like.
 # Quote
@@ -31,9 +31,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+## Technologies Used
+* HTML
+* CSS
+* JavaScript
+* Angular
+
+
 ## Support and contact details
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
+You can reach me on sean12ka@gmail.com
 ### License
-[MIT License](https://opensource.org/licenses/MIT)
+[MIT License](https://github.com/Cian747/quote-app/blob/main/license.txt)
 
 Copyright (c) 2021 **CIAN**
