@@ -38,12 +38,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * Angular
 
 ## LIVE LINK
-<<<<<<< HEAD
 https://cian747.github.io/quote-app/
-=======
-cian747.github.io/quote-app/
 
->>>>>>> e84f4417f35bf73d84a3926919af1e6ebc77c8bf
 ## Support and contact details
 You can reach me on sean12ka@gmail.com
 ### License
