@@ -10,8 +10,8 @@
       <div class="col-md-3" *ngFor='let quote of quotes; let i = index'>
         <div class="card" appHighlight>
           <div class="card-header">
-          <q>{{quote.words}}</q>
-          </div>  {{quote.completeDate| date}}
+            <q>{{quote.words}}</q>
+          </div> {{quote.completeDate| date}}
           <button (click)='toggleDetails(i)' class="btn btn-outline-primary">See author</button>
           <div *ngIf='quote.showName'>
             <app-quote-detail [name]='quote' (isComplete)='DeleteGoal($event,i)' (myLike)='addLike($event,i)'
