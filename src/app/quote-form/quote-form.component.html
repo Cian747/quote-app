@@ -3,7 +3,7 @@
         <h2 class="text-center">ADD YOUR QUOTE!</h2>
         <hr>
         <div class="form-group">
-            <label for="name">Name</label>
+            <label for="name">Your Name</label>
             <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.author" name="name"
                 #name='ngModel' placeholder="Full names">
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
@@ -19,13 +19,21 @@
             </div>
         </div>
         <div class="form-group">
+            <label for="name">Author of Quote</label>
+            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.publisher" name="publisher"
+                #publisher='ngModel' placeholder="Authors full names">
+            <div [hidden]="publisher.valid || publisher.pristine" class="alert alert-danger">
+                <p>Author name is required</p>
+            </div>
+        </div> <br>
+        <div class="form-group">
             <label for="complete">Date</label>
             <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate"
                 #completeDate="ngModel" required>
             <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
                 <p>Date is required</p>
             </div>
-        </div>
+        </div> <br>
         <button type="submit" class="btn btn-success">Save</button>
     </form>
 </div>
