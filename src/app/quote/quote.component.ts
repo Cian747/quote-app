@@ -9,12 +9,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote(1,'Blood,Sweat,Respect. The first two you give and the last one you earn','James Colden', 'Dwayne(The Rock!) Johnson',20, 2, new Date(2015,4,27)),
-    new Quote(2,'Hard work beats talent when talent does not work hard','JJ Watt','Cristiano Ronaldo',10, 3, new Date(2018,6,29)),
-    new Quote(3,'The process is what makes you sweet','Ben Lionel Scott','Eric The HipHop Preacher',12, 1, new Date(2018,8,12)),
-    new Quote(4,'Get out of the stands and get in the game','Kevin Hart ','Eric the HipHop Preacher',11,2,new Date(2019,4,2) ),
-    new Quote(5,'At a certain point, you gotta stop living in your head and start making things happen','Kendrick Lamar','Third Eye Thought',10,3, new Date(2020,12,31)),
-    new Quote(6,"Don't watch the clock; do what it does. Keep going",'J Cole','Sam Levenson',2,1, new Date(2021,4,27))
+    new Quote(1,'Blood,Sweat,Respect. The first two you give and the last one you earn','James Colden', 'Dwayne(The Rock!) Johnson',0, 2, new Date(2015,3,27)),
+    new Quote(2,'Hard work beats talent when talent does not work hard','JJ Watt','Cristiano Ronaldo',0, 3, new Date(2018,5,29)),
+    new Quote(3,'The process is what makes you sweet','Ben Lionel Scott','Eric The HipHop Preacher',0, 1, new Date(2018,4,12)),
+    new Quote(4,'Get out of the stands and get in the game','Kevin Hart ','Eric the HipHop Preacher',0,2,new Date(2019,3,2) ),
+    new Quote(5,'At a certain point, you gotta stop living in your head and start making things happen','Kendrick Lamar','Third Eye Thought',0,3, new Date(2020,11,31)),
+    new Quote(6,"Don't watch the clock; do what it does. Keep going",'J Cole','Sam Levenson',2,1, new Date(2021,3,27))
   ];
 
   toggleDetails(index: number){
